@@ -1,0 +1,20 @@
+.projectSettings--container {
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  width: 70%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+  .settingsForm {
+    padding: 60px;
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #878787;
+      line-height: 1;
+    }
+  }
+}

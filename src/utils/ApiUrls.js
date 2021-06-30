@@ -1,0 +1,77 @@
+// ROUTE NAME FOR SERVER APIS
+
+const ApiUrls = {
+  USER_REGISTER: "user/register",
+  LOGIN_USER: "user/login",
+  GOOGLE_LOGIN: "user/google-login",
+  FACEBOOK_LOGIN: "user/facebook-login",
+  SUPERUSER_GET_ALL_CLIENTS: "superuser/get-all-clients",
+
+  GET_ALL_CLIENTS: "user/get-all-clients?",
+  GET_ALL_PROJECTS: "user/get-all-projects?",
+  GET_ALL_USERS: "user/get-all-users?",
+  GET_ALL_TASKS: "user/get-all-tasks?",
+  GET_MY_TASKS: "user/get-my-tasks?",
+  GET_PROJECT_TASKS: "user/get-all-tasks?id=",
+  GET_PROJECT_TASKS_WITHOUT_LISTING: "user/get-project-tasks?id=",
+  GET_PROJECT_TASKLISTS: "user/get-all-tasklists?id=",
+  GET_PROJECT_FOLLOWERS: "user/get-project-followers/",
+  GET_ALL_ACTIVITIES: "user/get-activities?date=",
+  GET_CALENDAR_TASKS: "user/get-calendar-tasks?id=",
+  GET_ALL_LABLEL: "user/get-labels",
+  GET_TRASH_ITEMS: "user/get-trash-items",
+  GET_PROJECT_ATTACHMENTS: "user/get-project-attachments/",
+  GET_PROFILE_INFO: "user/get-profile-info/",
+
+  ADD_PROJECT: "user/add-project",
+  UPDATE_PROJECT: "user/update-project/",
+  DELETE_PROJECT: "user/delete-project/",
+  DELETE_PROJECT_FOLLOWER: "user/delete-project-follower",
+  ADD_PROJECT_FOLLOWER: "user/add-project-follower",
+  ADD_DISCUSSION_COLLECTION: "user/add-discussion-collection",
+  GET_DISCUSSION_COLLECTION: "user/get-discussion-collections/",
+  DELETE_DISCUSSION_COLLECTION: "user/delete-discussion-collection/",
+  UPDATE_DISCUSSION_COLLECTION: "user/update-discussion-collection/",
+  GET_ALL_MESSAGES: "user/get-all-comments/",
+  DRAG_TASKLIST: "user/drag-tasklist",
+  DRAG_TASK: "user/drag-task",
+
+  ADD_FOLLOWERS: "user/add-follower",
+  DELETE_FOLLOWERS: "user/delete-follower",
+
+  ADD_TASK: "user/add-task",
+  UPDATE_TASK: "user/update-task/",
+  FORCE_UPDATE_TASK: "user/force-update-task/",
+  DELETE_TASK: "user/delete-task/",
+  FORCE_DELETE_TASK: "user/force-delete-task/",
+  ADD_SUBTASK: "user/add-subtask",
+  EDIT_SUBTASK: "user/update-subtask/",
+  DELETE_SUBTASK: "user/delete-subtask/",
+  ADD_NEW_TASKLIST: "user/add-tasklist",
+  ADD_LABEL: "user/add-label",
+  UPDATE_LABEL: "user/update-label/",
+  DELETE_LABEL: "user/delete-label/",
+
+  ADD_ATTACHMENT: "user/add-attachment",
+  DELETE_ATTACHMENT: "user/delete-attachment/",
+  ADD_DEPENDENCY: "user/add-dependency",
+  DELETE_DEPENDENCY: "user/delete-dependency/",
+  ADD_COMMENTS: "user/add-comment",
+
+  // ADD_CLIENT: "user/add-client",
+  ADD_CLIENT: "user/invite-member",
+  DELETE_USER: "user/delete-user/",
+  ACTIVATE_USER: "user/activate-profile/",
+
+  CHANGE_PASSWORD: "user/reset-password/",
+  UPDATE_PROFILE: "user/update-profile/",
+  INVITE_USER: "user/invite-member",
+  FORGOT_PASSWORD: "user/request-forgot-password",
+  RESET_PASSWORD: "user/forget-password/",
+
+  TRASH_RESTORE: "user/trash-restore/",
+  DELETE_PERMANENT: "user/delete-permanently/",
+  EMPTY_TRASH: "user/empty-trash",
+};
+
+export default ApiUrls;

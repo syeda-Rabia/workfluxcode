@@ -1,0 +1,10 @@
+.transactions__content {
+  #{&}--heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+
+    color: #2b7ae4;
+  }
+}

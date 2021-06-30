@@ -1,0 +1,30 @@
+.demo-wrapper {
+  //   background: red;
+  min-height: 150px;
+  //   width: 350px;
+  // border: 1px solid #dadada;
+  border-bottom: none;
+  // border-radius: 7px;
+}
+.toolbar-class {
+  border: none !important;
+  border-bottom: 1px solid #dadada !important;
+  background: transparent !important;
+  //   margin: 0px 5px;
+  height: 32px;
+  .rdw-option-wrapper {
+    border: none;
+
+    img {
+      filter: opacity(0.58);
+      height: 13px;
+      width: 13px;
+    }
+    &:hover {
+      background: #eee;
+    }
+  }
+}
+.demo-editor {
+  padding: 0px 10px !important;
+}

@@ -1,0 +1,13 @@
+.project--title h1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 44px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 576px) {
+  .project--title h1 {
+    font-size: 1.2rem;
+  }
+}

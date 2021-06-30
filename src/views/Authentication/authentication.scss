@@ -1,0 +1,95 @@
+//
+// authentication.scss
+//
+.loginScreen {
+  background-color: #fefefe;
+  @media (max-width: 576px) {
+    // background-image: url("../../assets/img/signup-panel-bg.png");
+    // background-size: cover;
+  }
+  #{&}--innerDiv {
+    // background-color: red;
+    // width: 300px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    @media (max-width: 576px) {
+      background-image: url("../../assets/img/signup-panel-bg.png");
+      background-size: cover;
+    }
+  }
+  #{&}--row {
+    display: grid;
+    place-items: center;
+  }
+}
+
+.auth-body-bg {
+  background-color: white;
+}
+
+.authentication-bg {
+  background-image: url("../../assets/img/signup-panel-bg.png");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  .bg-overlay {
+    // background-color: #292626;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    p {
+      text-align: left;
+      font-size: 14px;
+      font-weight: 600;
+      color: #34373c;
+    }
+    span {
+      padding: 20px;
+      margin-top: 30%;
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.authentication-page-content {
+  height: 100vh;
+  display: flex;
+}
+
+.auth-form-group-custom {
+  position: relative;
+  .form-control {
+    height: 60px;
+    padding-top: 28px;
+    padding-left: 60px;
+  }
+
+  label {
+    position: absolute;
+    top: 7px;
+    left: 60px;
+  }
+
+  .auti-custom-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 19px;
+    font-size: 24px;
+  }
+}
+
+// authentication home icon
+.home-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  z-index: 9;
+}

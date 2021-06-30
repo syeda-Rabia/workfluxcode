@@ -1,0 +1,263 @@
+@import "./assets/scss/selectBoxStyle";
+@import "./assets/scss/tableStyle";
+@media (max-width: 576px) {
+  #floatingButton {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}
+.antdModel {
+  background-color: rgba($color: #fbfbfb, $alpha: 0.8) !important;
+}
+
+.secondaryBtn {
+  color: #787878 !important;
+  border: 2px solid #d7d7d7 !important;
+  box-sizing: border-box !important;
+  border-radius: 7px !important;
+}
+.primaryBtn {
+  color: #2b7ae4 !important;
+  border: 2px solid #2b7ae4 !important;
+  box-sizing: border-box !important;
+  border-radius: 7px !important;
+}
+.circle {
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.radiusBorderInput {
+  border: 2px solid #d7d7d7 !important;
+  box-sizing: border-box !important;
+  border-radius: 7px !important;
+}
+
+.customPanel {
+  .ant-collapse-content-box {
+    padding: 0px 0px !important;
+  }
+}
+.avatar-uploader > .ant-upload {
+  width: 140px !important;
+  height: 140px !important;
+}
+.customEditor {
+  border: 1px solid #dadada;
+  border-radius: 7px;
+  padding: 5px;
+  .ant-mentions {
+    border: none !important;
+  }
+  .ant-mentions-focused {
+    box-shadow: none !important;
+  }
+  .editorAttachments {
+    border-top: 1px solid #dadada;
+    min-height: 25px;
+    padding: 10px;
+
+    width: 100%;
+    .ant-upload.ant-upload-select {
+      display: block;
+    }
+    .title {
+      margin-right: 5px;
+      color: #373737;
+      font-weight: bold;
+    }
+    .detail {
+      color: #8e8e8e;
+    }
+  }
+}
+//
+
+.checkboxDiv {
+  .checkboxComplete {
+    display: inline-block;
+    position: relative;
+    background-color: #2b7ae4;
+    width: 24px;
+    height: 24px;
+    transform-origin: center;
+
+    border-radius: 50%;
+    vertical-align: -6px;
+    margin-right: 10px;
+    &:before {
+      content: "";
+      width: 5px;
+      height: 2px;
+      border-radius: 2px; // so that the tick has nice rounded look
+      background: white;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 12px; // you'll need to experiment with placement depending on the dimensions you've chosen
+      left: 8px; // you'll need to experiment with placement depending on the dimensions you've chosen
+      transition: width 50ms ease 50ms;
+      transform-origin: 0% 0%;
+    }
+
+    &:after {
+      content: "";
+      width: 10px;
+      height: 2px;
+      border-radius: 2px; // so that the tick has nice rounded look
+      background: white;
+      position: absolute;
+      transform: rotate(305deg);
+      top: 15px; // you'll need to experiment with placement depending on the dimensions you've chosen
+      left: 9px; // you'll need to experiment with placement depending on the dimensions you've chosen
+      transition: width 50ms ease;
+      transform-origin: 0% 0%;
+    }
+  }
+  .checkbox {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    transform-origin: center;
+    border: 2px solid;
+    border-color: #8e8e8e;
+    border-radius: 50%;
+    vertical-align: -6px;
+    margin-right: 10px;
+    transition: border-color 150ms 200ms,
+      transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89); // custom ease effect for bouncy animation
+
+    // Now we'll create the "tick" using pseudo elements - those will be basically two lines that will be rotated to form the "tick"
+
+    &:before {
+      content: "";
+      width: 0px;
+      height: 2px;
+      border-radius: 2px; // so that the tick has nice rounded look
+      background: #2b7ae4;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 11px; // you'll need to experiment with placement depending on the dimensions you've chosen
+      left: 6px; // you'll need to experiment with placement depending on the dimensions you've chosen
+      transition: width 50ms ease 50ms;
+      transform-origin: 0% 0%;
+    }
+
+    &:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      border-radius: 2px; // so that the tick has nice rounded look
+      background: #2b7ae4;
+      position: absolute;
+      transform: rotate(305deg);
+      top: 14px; // you'll need to experiment with placement depending on the dimensions you've chosen
+      left: 7px; // you'll need to experiment with placement depending on the dimensions you've chosen
+      transition: width 50ms ease;
+      transform-origin: 0% 0%;
+    }
+    &:hover {
+      border-color: #2b7ae4;
+
+      &:before {
+        width: 5px;
+        transition: width 100ms ease;
+      }
+
+      &:after {
+        width: 10px;
+        transition: width 150ms ease 100ms;
+      }
+    }
+  }
+  input[type="checkbox"] {
+    display: none; // hide the system checkbox
+
+    &:checked {
+      + label {
+        .checkbox {
+          border-color: white;
+          background-color: #2b7ae4 !important;
+          transform: scale(1.25); // enlarge the box
+
+          &:after {
+            width: 10px;
+            background: white;
+            transition: width 150ms ease 100ms; // enlarge the tick
+          }
+
+          &:before {
+            width: 5px;
+            background: white;
+            transition: width 150ms ease 100ms; // enlarge the tick
+          }
+        }
+
+        &:hover {
+          .checkbox {
+            background-color: #fff;
+            transform: scale(1.25); // enlarge the box
+
+            &:after {
+              width: 10px;
+              background: white;
+              transition: width 150ms ease 100ms; // enlarge the tick
+            }
+
+            &:before {
+              width: 5px;
+              background: white;
+              transition: width 150ms ease 100ms; // enlarge the tick
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.animatedBtnDiv {
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  max-width: 170px;
+  min-width: 150;
+  width: unset;
+  // justify-content: center;
+  .increaseWidthDiv {
+    position: absolute;
+    left: 0;
+    border-radius: 30px;
+  }
+  .iconDiv {
+    display: grid;
+    place-items: center;
+    background: #2b7ae4;
+    color: #ffffff;
+    font-size: 17px;
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    margin-right: 6px;
+  }
+  .text {
+    position: absolute;
+    left: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+}

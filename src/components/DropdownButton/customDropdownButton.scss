@@ -1,0 +1,91 @@
+.customDropdown {
+  #dropdownButton {
+    width: unset;
+    max-width: unset;
+    min-width: 130px;
+    height: 42px;
+    border: 2px solid #d7d7d7;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #787878;
+    &::after {
+      display: none;
+      // transform: rotate(-180deg);
+    }
+    &--icon {
+      transition: 0.4s all ease-in-out;
+
+      transform: rotate(-180deg);
+    }
+    &--iconRotateBack {
+      transition: 0.4s all ease-in-out;
+
+      transform: rotate(0deg);
+    }
+  }
+  .dropdown-menu {
+    min-width: 130px;
+  }
+  .dropdown-item {
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 15px !important;
+    line-height: 19px !important;
+    padding: 5px 5px !important;
+    color: #787878 !important;
+    &:focus {
+      background-color: #fafbfd !important;
+    }
+  }
+}
+
+// .filterButton {
+//   position: relative;
+//   min-width: 100px;
+//   max-width: 177px;
+//   height: 35px;
+//   border: 2px solid #d7d7d7 !important;
+//   box-sizing: border-box !important;
+//   border-radius: 7px !important;
+//   margin: 0px 5px;
+//   text-transform: capitalize;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 15px;
+//   color: #787878;
+//   &:hover {
+//     border-color: #2b7ae4 !important;
+//   }
+
+//   #{&}--text {
+//     // display: flex;
+//     // justify-content: space-between;
+//     // align-items: center;
+//     width: 100% !important;
+//     // font-style: normal;
+//     // font-weight: normal;
+//     // font-size: 15px;
+//     // line-height: 19px;
+//     // color: #787878;
+//     // white-space: nowrap !important;
+//     // overflow: hidden !important;
+//     // text-overflow: ellipsis !important;
+//     &:hover {
+//       border-color: #2b7ae4 !important;
+//     }
+//   }
+//   #{&}--arrow {
+//     position: absolute;
+//     right: 0 !important;
+//     margin: 3px 0px;
+//     margin-left: 5px;
+//     fill: #787878;
+//     font-size: 15px !important;
+//   }
+// }

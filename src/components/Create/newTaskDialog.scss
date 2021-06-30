@@ -1,0 +1,166 @@
+.newTask {
+  border: none;
+  border-radius: 6px;
+  width: 60% !important;
+  @media (max-width: 576px) {
+    width: 100% !important;
+  }
+  @media (min-width: 600px) and (max-width: 768px) {
+    width: 75% !important;
+  }
+  .ant-modal-close {
+    top: -6px;
+  }
+
+  .comentTitle {
+    margin: 10px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #616161;
+  }
+
+  label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #787878 !important;
+  }
+  input {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #484848;
+  }
+}
+
+.showComment {
+  // border: 1px solid #2b7ae4;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #8e8e8e;
+  font-size: 14px;
+  cursor: text;
+  transition: all 150ms ease;
+  // max-width: 400px;
+  &:hover {
+    border-color: #2b7ae4;
+  }
+}
+.modalheader {
+  height: 15px;
+
+  .iconsDiv {
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 51px;
+    button {
+      padding: 7px;
+      font-size: 15px;
+    }
+  }
+
+  .headerIcon {
+    position: absolute !important;
+    bottom: -18px !important;
+    right: 15px !important;
+  }
+}
+
+.taskTitle {
+  width: 100%;
+  width: calc(100% - 7%);
+  margin-left: 10px;
+  height: 55px;
+  border: radius 10px;
+  margin-bottom: 15px;
+
+  &:hover {
+    background: #fafbfd;
+    transition: background 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  }
+  #{&}--input {
+    height: 100%;
+    min-height: 40px;
+    font-size: 18px;
+    padding: 5px 7px 2px;
+    border-radius: 4px;
+    &:focus {
+      border: 1px solid #2b7ae4 !important;
+    }
+  }
+}
+
+.subtask {
+  #{&}--list {
+    padding: 5px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    input {
+      border: none;
+      &:hover {
+        background: rgba(0, 0, 0, 0.02);
+      }
+    }
+  }
+}
+.followerDiv {
+  background-color: white !important;
+  margin-bottom: 10px;
+  min-width: 150px !important;
+  padding: 10px;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+}
+.dependency--maindiv {
+  h2 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 0px 0px;
+    margin: 0 0 12px 7px;
+    color: #737373;
+  }
+  .dependencyFormDiv {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 12px;
+    color: #8e8e8e;
+  }
+  .listItem {
+    text-transform: capitalize;
+    color: #373737;
+    font-size: 14px;
+    line-height: 24px;
+
+    // border: none !important;
+  }
+}
+
+.subtask--mainDiv {
+  h2 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 0px 0px;
+    margin: 0 0 12px 7px;
+    color: #737373;
+  }
+  .subtaskFormDiv {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+  }
+}

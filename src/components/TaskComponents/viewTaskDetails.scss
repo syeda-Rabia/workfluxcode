@@ -1,0 +1,62 @@
+.viewTask {
+  .comentTitle {
+    margin: 10px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #616161;
+  }
+
+  label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #787878 !important;
+  }
+  input {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #484848;
+  }
+}
+.drawerTitle {
+  display: flex;
+  align-items: center !important;
+
+  .iconsDiv {
+    justify-content: flex-end;
+    margin-right: 45px;
+    // margin-top: 13px;
+    // background-color: red;
+    button {
+      padding: 10px;
+      font-size: 17px;
+    }
+  }
+  .ant-drawer-close {
+    top: 6px;
+    right: -10px;
+    // background-color: red !important;
+  }
+
+  .headerIcon {
+    position: absolute !important;
+    bottom: 11px !important;
+    right: 30px !important;
+
+    // background: red;
+  }
+}
+.followerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

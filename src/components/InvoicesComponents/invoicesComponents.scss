@@ -1,0 +1,151 @@
+.createNewInvoice {
+  #{&}--div {
+    background: #ffffff;
+    box-shadow: 0px 0px 65px rgba(43, 122, 228, 0.1);
+    border-radius: 7px;
+    padding: 10px 30px;
+    margin: 10px;
+    #form {
+      .boldLabel {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 19px;
+
+        color: #cbcbcb;
+      }
+
+      h6 {
+        margin: 20px 0px !important;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #292929;
+      }
+
+      .expensestable {
+        th {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 19px;
+
+          color: #cbcbcb;
+        }
+        td {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 16px;
+
+          color: #616161;
+        }
+      }
+    }
+    .div--header {
+      display: flex;
+      align-items: center;
+      @media (max-width: 576px) {
+        flex-direction: column !important;
+      }
+      .header--heading {
+        margin-top: 2rem;
+        margin-left: 5rem;
+        @media (max-width: 576px) {
+          margin-left: 0 !important;
+
+          flex-direction: column !important;
+        }
+        h5 {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 25px;
+          line-height: 31px;
+          text-align: center;
+
+          color: #292929;
+        }
+        span {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 19px;
+
+          color: #616161;
+        }
+      }
+    }
+  }
+  .addlogoImg {
+    width: 150px;
+    height: 105px;
+    border: 2px dashed #dadada;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    &:hover {
+      cursor: pointer !important; /* "hand" cursor */
+    }
+    &--button {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .text {
+      width: 100%;
+      height: 100%;
+      padding: 30% 0px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 19px;
+      color: #616161;
+      &:hover {
+        cursor: pointer !important; /* "hand" cursor */
+      }
+    }
+  }
+  .invoiceHeading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 44px;
+    text-align: center;
+
+    color: #292929;
+  }
+  .amountDue {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #616161;
+  }
+  .price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+
+    color: #292929;
+  }
+  .subHeading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+
+    color: #616161;
+  }
+}

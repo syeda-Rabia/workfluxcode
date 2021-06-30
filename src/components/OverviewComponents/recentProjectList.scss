@@ -1,0 +1,31 @@
+.recentProjectList__content {
+  &--title {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #292929;
+  }
+  ul li span {
+    margin-left: 20px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #616161;
+  }
+}
+#seeMore {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  color: #2b7ae4;
+}

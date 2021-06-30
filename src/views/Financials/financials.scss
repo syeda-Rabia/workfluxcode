@@ -1,0 +1,150 @@
+.financials__content {
+  #{&}--heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+
+    color: #2b7ae4;
+    margin-bottom: 35px;
+  }
+  #{&}--subHeading {
+    margin-top: 19px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2b7ae4;
+  }
+  #{&}--table {
+    background: #fafbfd;
+    border-radius: 7px;
+    padding: 20px;
+
+    td {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 19px;
+
+      color: #616161;
+    }
+    .tdTotal {
+      font-weight: bold;
+
+      color: #2b7ae4;
+    }
+  }
+
+  .subHeading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2b7ae4;
+  }
+}
+.finanicalHeader--card {
+  width: 183px;
+  height: 103px;
+  background: #fafbfd;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 10px 20px;
+  .card--heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 24px;
+
+    color: #616161;
+  }
+  .card--price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #484848;
+  }
+}
+#financialScreenChart {
+  padding: 10px;
+  #bar-chart {
+    background-color: rgb(55, 71, 79);
+    width: 800px;
+    height: 350px;
+    font-family: Mulish;
+  }
+
+  .ct-series-a .ct-bar {
+    /* Colour of your bars */
+    stroke: #2b7ae4 !important;
+    stroke-width: 20;
+    @media (max-width: 576px) {
+      stroke-width: 10;
+    }
+  }
+  .ct-series-b .ct-bar {
+    /* Colour of your bars */
+    stroke: #ff8540 !important;
+    stroke-width: 20;
+
+    @media (max-width: 576px) {
+      stroke-width: 10;
+    }
+  }
+  .ct-series-c .ct-bar {
+    /* Colour of your bars */
+    stroke: #8f8f8f !important;
+    stroke-width: 20;
+    @media (max-width: 576px) {
+      stroke-width: 10;
+    }
+  }
+
+  .ct-label {
+    color: black !important;
+  }
+
+  .ct-grid {
+    stroke: #c8ddf8 !important;
+  }
+  .chartHelper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31px;
+    margin-bottom: 20px;
+    &--color {
+      width: 25px;
+      height: 12px;
+      background: #2b7ae4;
+      border-radius: 5px;
+      margin-right: 5px;
+      &:nth-child(3) {
+        background-color: #8f8f8f;
+      }
+      &:nth-child(5) {
+        background-color: #174788;
+      }
+    }
+
+    &--text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      /* identical to box height */
+
+      color: #292929;
+      margin-right: 24px;
+    }
+  }
+}
+// .chartHelper .chartHelper--color:nth-child(3) {
+//   background-color: red !important;
+// }

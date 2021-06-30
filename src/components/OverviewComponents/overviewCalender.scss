@@ -1,0 +1,42 @@
+#overviewCalender {
+  .rbc-toolbar {
+    flex-wrap: nowrap !important;
+
+    @media (max-width: 576px) {
+      flex-wrap: wrap !important;
+
+      display: flex;
+      flex-direction: column;
+    }
+    .rbc-btn-group button {
+      background-color: #3ba3f5;
+      color: white;
+      border: 1px solid #efefef;
+      &:active {
+        background-color: #0c7cd5;
+        color: white;
+      }
+      &:focus {
+        background-color: #0c7cd5;
+        color: white;
+      }
+      &:hover {
+        background-color: #1b91eb;
+        color: white;
+      }
+    }
+
+    .rbc-toolbar-label {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 23px;
+
+      color: #616161;
+    }
+  }
+  .rbc-month-view {
+    border-radius: 10px;
+  }
+}

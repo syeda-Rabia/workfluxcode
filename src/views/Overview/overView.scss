@@ -1,0 +1,58 @@
+.overview--Content {
+  h3 {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #292929;
+  }
+}
+#containerTitle h1 {
+  padding: 0px 10px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #292929;
+}
+#overviewScreenChart {
+  #bar-chart {
+    background-color: rgb(55, 71, 79);
+    width: 800px;
+    height: 350px;
+    font-family: Lato, Helvetica-Neue, monospace;
+  }
+
+  .ct-series-a .ct-bar {
+    /* Colour of your bars */
+    stroke: #2b7ae4 !important;
+    // stroke-width: 15;
+  }
+  .ct-series-b .ct-bar {
+    /* Colour of your bars */
+    stroke: #c8ddf8 !important;
+    // stroke-width: 15;
+  }
+  .ct-series-c .ct-bar {
+    /* Colour of your bars */
+    stroke: #8f8f8f !important;
+    // stroke-width: 15;
+  }
+  .ct-series-d .ct-bar {
+    /* Colour of your bars */
+    stroke: #174788 !important;
+    // stroke-width: 15;
+  }
+
+  .ct-label {
+    color: black !important;
+  }
+
+  .ct-grid {
+    stroke: #c8ddf8 !important;
+  }
+}

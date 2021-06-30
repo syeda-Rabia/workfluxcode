@@ -1,0 +1,103 @@
+.revenueAndExpense__content {
+  #{&}--buttons {
+    .mediaQueryButtonRight {
+      @media (max-width: 576px) {
+        margin-left: auto;
+      }
+    }
+  }
+  #{&}--table {
+    border: 2px solid #efefef;
+    box-sizing: border-box;
+    border-radius: 7px;
+    td {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #292929;
+    }
+  }
+}
+.addNewExpense--formRow {
+  label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #484848;
+    word-wrap: normal !important;
+  }
+  input {
+    border: 2px solid #d7d7d7;
+    box-sizing: border-box;
+    border-radius: 7px;
+  }
+}
+.inputfile {
+  width: 230px;
+  height: 40px;
+  border: 1px dashed #dadada;
+  box-sizing: border-box;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer !important; /* "hand" cursor */
+  }
+  &--button {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  label {
+    padding: 9px 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #616161;
+    &:hover {
+      cursor: pointer !important; /* "hand" cursor */
+    }
+  }
+}
+.categoryForm {
+  .label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #616161;
+  }
+  input {
+    border: 2px solid #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-bottom: 10px;
+  }
+}
+.connectAccount--content {
+  background: #fafbfd;
+  border-radius: 7px;
+  height: 112px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  width: calc(100% - 20%);
+  @media (max-width: 576px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #292929;
+    margin-right: 37px;
+  }
+}

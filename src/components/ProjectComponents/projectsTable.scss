@@ -1,0 +1,23 @@
+.projectTable__content {
+  #{&}--buttons {
+    margin: 0px 0px;
+    button {
+      @media (max-width: 440px) {
+        &:last-child {
+          margin-top: 10px;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  #{&}--table {
+    td {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+
+      color: #292929;
+    }
+  }
+}

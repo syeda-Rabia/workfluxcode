@@ -1,0 +1,14 @@
+.invoiceButtons .invoiceButton {
+  min-width: 130px;
+
+  margin: 5px;
+}
+
+@media (max-width: 576px) {
+  .invoiceButtons .invoiceButton {
+    font-size: 10px;
+  }
+  .invoiceButtons .invoiceButton:nth-child(2) {
+    float: right;
+  }
+}

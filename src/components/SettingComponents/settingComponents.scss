@@ -1,0 +1,114 @@
+#profileUpdateAntd {
+  .ant-upload-select-picture-card {
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+  }
+}
+.settingComponents--form {
+  label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #616161;
+  }
+  input {
+    border: 2px solid #d7d7d7;
+    box-sizing: border-box;
+    border-radius: 7px;
+  }
+}
+.settingComponents--heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #2b7ae4;
+}
+.settingComponents--subscriptionCard {
+  margin: 10px 10px;
+  padding: 15px 15px;
+  min-width: 200px;
+  min-height: 265px;
+  width: unset;
+  height: unset;
+  max-width: unset;
+  max-width: unset;
+  background: #fafbfd;
+  border-radius: 7px;
+  .title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #8f8f8f;
+  }
+  ul {
+    padding: 20px;
+    list-style: none;
+    li {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 5px 0px;
+      color: #8f8f8f;
+    }
+  }
+}
+.settingComponents--imgs {
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: calc(100% - 30%) !important;
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+}
+.settingComponents--input {
+}
+
+.importExportFile {
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+  border: 1px dashed #dadada;
+  box-sizing: border-box;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer !important; /* "hand" cursor */
+  }
+  &--button {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  label {
+    padding: 9px 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #616161;
+    &:hover {
+      cursor: pointer !important; /* "hand" cursor */
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@mixin paragraph {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #616162;
+}
+
+.payment__content {
+  //   background-color: red;
+  #{&}--method {
+    background-color: #fafbfd !important;
+
+    border-radius: 7px !important;
+    h6 {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #292929;
+    }
+    p {
+      @include paragraph;
+    }
+  }
+  #{&}--stripe {
+    p {
+      @include paragraph;
+
+      font-weight: normal;
+    }
+  }
+  #{&}--paypal {
+    p {
+      @include paragraph;
+
+      font-weight: normal;
+    }
+  }
+  #{&}--wireTransfer {
+    h3 {
+      font-weight: 800;
+      font-size: 18px;
+    }
+    p {
+      @include paragraph;
+      font-weight: normal;
+    }
+  }
+  #{&}--mailedCheck {
+    h3 {
+      font-weight: 800;
+      font-size: 18px;
+    }
+    p {
+      @include paragraph;
+      font-weight: normal;
+    }
+  }
+  #{&}--backAccountInformation {
+    h4 {
+      font-weight: 800;
+      font-size: 21px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #616162;
+    }
+  }
+  #{&}--checkPaymentInfo {
+    h4 {
+      font-weight: 800;
+      font-size: 21px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #616162;
+    }
+  }
+}
+.inputLabel {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #292929;
+}
+.checkboxLabel {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #616162;
+}

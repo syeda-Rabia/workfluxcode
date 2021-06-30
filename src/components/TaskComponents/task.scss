@@ -1,0 +1,33 @@
+.collapseContainer {
+  .collapseSubHeading {
+    font-size: 16px;
+    color: #373737;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .collapseTitle {
+    font-size: 16px;
+    color: #373737;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 15px 2px;
+    position: relative;
+  }
+  .collapseHeading {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #2b7ae4;
+    text-transform: capitalize;
+  }
+  .company {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 16px;
+  }
+}
+.sketch-picker {
+  box-shadow: none !important;
+}

@@ -1,0 +1,105 @@
+.timeInput {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.timeTrackingButtons {
+  .timeTrackingButton {
+    margin: 5px;
+
+    @media (max-width: 576px) {
+      font-size: 11px !important;
+
+      &:nth-child(2) {
+        min-width: 139px;
+        float: right;
+      }
+      &:nth-child(3) {
+        min-width: 120px;
+      }
+      &:nth-child(4) {
+        min-width: 140px;
+      }
+    }
+  }
+}
+
+.timeTracking__table--buttons {
+  button {
+    min-width: 130px;
+    margin: 5px 5px;
+    @media (max-width: 576px) {
+      font-size: 10px;
+      &:nth-child(even) {
+        float: right;
+      }
+    }
+  }
+}
+.timeTrackingcard {
+  width: calc(100% - 10%) !important;
+  // height: calc(100% - 20%) !important;
+  background: #fafbfd !important;
+  border: 1px solid #efefef !important;
+  box-sizing: border-box !important;
+  border-radius: 7px !important;
+
+  &__content {
+    &--cardTitle {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 19px;
+      line-height: 24px;
+      color: #616161;
+    }
+    span {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+
+      color: #484848;
+    }
+    p {
+      margin-top: 10px;
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 16px;
+
+      color: #484848;
+    }
+  }
+}
+
+#bar-chart {
+  background-color: rgb(55, 71, 79);
+  width: 800px;
+  height: 350px;
+  font-family: Lato, Helvetica-Neue, monospace;
+}
+
+.ct-series-a .ct-bar {
+  /* Colour of your bars */
+  stroke: #2b7ae4 !important;
+  // stroke-width: 15;
+}
+.ct-series-b .ct-bar {
+  /* Colour of your bars */
+  stroke: #ffb340 !important;
+  // stroke-width: 15;
+}
+
+.ct-label {
+  color: black !important;
+}
+
+.ct-grid {
+  stroke: #c8ddf8 !important;
+}

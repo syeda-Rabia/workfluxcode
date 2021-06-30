@@ -1,0 +1,26 @@
+.antSelect:hover {
+  background-color: #2b7ae4 !important;
+  color: white !important;
+}
+.antSelect {
+  z-index: 1;
+}
+
+.filterButton {
+  min-width: 90px;
+  max-width: 177px;
+  height: 35px;
+  border: 2px solid #d7d7d7 !important;
+  box-sizing: border-box !important;
+  border-radius: 7px !important;
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #787878;
+  &:hover {
+    border-color: #2b7ae4 !important;
+  }
+  @media (max-width: 576px) {
+  }
+}

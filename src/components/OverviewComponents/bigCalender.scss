@@ -1,0 +1,20 @@
+.fc-button-group {
+  .fc-button {
+    background-color: #2b7ae4;
+    border: none;
+    &:hover {
+      background-color: #0077ff !important;
+    }
+  }
+  .fc-button-active {
+    background-color: #0077ff !important;
+    border: none;
+    box-shadow: none;
+  }
+  .fc-button:focus {
+    box-shadow: none;
+  }
+}
+.fc-toolbar-title {
+  color: #616162;
+}

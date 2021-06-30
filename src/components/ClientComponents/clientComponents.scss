@@ -1,0 +1,75 @@
+@media (max-width: 576px) {
+  .filterBtn {
+    margin-top: 10px !important;
+  }
+  #newClientBtn {
+    margin-top: 10px !important;
+  }
+}
+
+.newClient__content {
+  #{&}--heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #484848;
+  }
+  #{&}--form {
+    .row {
+      flex-wrap: nowrap !important;
+    }
+  }
+}
+.invoiceOverView__content {
+  width: 100%;
+  padding: 20px;
+  background: #fafbfd;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 7px;
+  #{&}--heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2b7ae4;
+  }
+  #{&}--table {
+    th {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      color: #484848;
+    }
+    td {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+
+      color: #292929;
+    }
+  }
+  #{&}--projects {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #484848;
+  }
+  #{&}--notes {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #484848;
+  }
+}
